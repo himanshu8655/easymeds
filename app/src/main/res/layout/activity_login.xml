@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:id="@+id/linLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/wallpaper"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="60sp"
+                        android:gravity="center"
+                        android:text="Welcome to the App"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="33sp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginRight="20sp"
+                    android:layout_below="@+id/linLayout"
+                    android:id="@+id/cv"
+                    app:cardCornerRadius="7sp"
+                    android:elevation="30sp"
+                    android:padding="10sp"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_margin="18sp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/tv1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:text="LOGIN HERE !"
+                            android:textColor="@color/cardview"
+                            android:textSize="30sp"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_marginTop="18sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Email ID"
+                            android:textColor="@color/cardview"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+
+                        <EditText
+                            android:id="@+id/editTextEmail"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/textviewshape"
+                            android:textSize="18sp"
+                            android:padding="10sp"
+                            android:layout_marginTop="18sp"
+                            android:maxLines="1"
+                            android:drawableLeft="@drawable/email_blue"
+                            android:inputType="textEmailAddress" />
+
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="wrap_content"
+                            android:layout_marginTop="18sp"
+                            android:layout_height="wrap_content"
+                            android:text="Password"
+                            android:textColor="@color/cardview"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/P_no"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="18sp"
+                            android:background="@drawable/textviewshape"
+                            android:textSize="20dp"
+                            android:padding="10sp"
+                            android:drawableLeft="@drawable/password_blue"
+                            android:maxLines="1"
+                            android:inputType="textPassword"
+                            android:textColor="#F30E0D0D" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Remember Me"
+                            android:layout_marginTop="18sp"
+                            android:textColor="@color/cardview"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:buttonTint="@color/cardview" />
+
+                        <Button
+                            android:id="@+id/buttonSignin"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="18sp"
+                            android:background="@drawable/cardviewbutton"
+                            android:text="Login"
+                            android:textAllCaps="false"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="17sp" />
+
+                        <Button
+                            android:id="@+id/textViewSignUp"
+                            style="?android:attr/borderlessButtonStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Don't have an  account? SignUp here"
+                            android:layout_gravity="center"
+                            android:textColor="@color/cardview"
+                            android:layout_marginTop="18sp"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <Button
+                    android:layout_below="@+id/cv"
+                    android:id="@+id/tvForgot"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_margin="10sp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_alignParentRight="true"
+                    android:elevation="5dp"
+                    android:text="Forgot your password?"
+                    android:textStyle="bold"
+                    android:textSize="14sp"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

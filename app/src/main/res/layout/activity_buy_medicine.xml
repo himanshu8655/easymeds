@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".buy_medicine"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/display"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:elevation="10sp"
+        android:textAlignment="center"
+        android:visibility="gone"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/cardview"
+        android:text="No Medicine In Stock For Now!"/>
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:elevation="10sp"
+        android:indeterminateDrawable="@drawable/progressdrawable"
+        android:id="@+id/progress"/>
+    <Button
+        android:id="@+id/cart_btn"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:textColor="@color/colorWhite"
+        android:text="PROCEED TO CART"
+        android:drawableStart="@drawable/ic_baseline_shopping_cart_24"
+        android:layout_marginTop="1sp"
+        android:layout_alignParentBottom="true"
+        android:padding="30sp"
+        android:textSize="18sp"
+        android:background="@color/cardview"
+        android:layout_height="wrap_content"/>
+
+
+
+
+        <ScrollView
+            android:layout_above="@+id/cart_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/layot"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" />
+
+        </ScrollView>
+
+
+</RelativeLayout>

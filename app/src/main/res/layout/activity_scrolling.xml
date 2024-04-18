@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ScrollingActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:id="@+id/hide">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/linearlayout">
+            <TextView
+                android:layout_width="match_parent"
+                android:textStyle="bold"
+                android:textSize="17dp"
+                android:textAlignment="center"
+                android:padding="15dp"
+                android:drawableStart="@drawable/ic_baseline_location_on_24"
+                android:text="No Location Detected, Click here to set it automatically"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:background="@color/colorBlue"
+                android:textColor="@color/colorWhite"
+                android:id="@+id/location_tv"/>
+
+        </LinearLayout>
+    </ScrollView>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/display"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:elevation="10sp"
+        android:textAlignment="center"
+        android:visibility="visible"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/cardview"
+        android:text="Fetching Location..."/>
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminateTint="@color/cardview"
+        android:layout_below="@+id/display"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/progress_location"/>
+
+
+</RelativeLayout>

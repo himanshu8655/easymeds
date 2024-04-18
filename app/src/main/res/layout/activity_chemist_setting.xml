@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChemistSetting">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_weight="1"
+                android:id="@+id/book_history"
+                android:padding="60sp"
+                android:layout_margin="15sp"
+                android:background="@drawable/turf_button"
+                android:textColor="@color/colorWhite"
+                android:textSize="30sp"
+                android:layout_height="wrap_content"
+                android:text="ADD stock"/>
+            <Button
+                android:layout_width="match_parent"
+                android:id="@+id/offline_booking"
+                android:textSize="30sp"
+                android:padding="60sp"
+                android:visibility="gone"
+                android:layout_margin="15sp"
+                android:layout_weight="1"
+                android:background="@drawable/turf_button"
+                android:textColor="@color/colorWhite"
+                android:layout_height="wrap_content"
+                android:text="offline buy"/>
+            <Button
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_weight="1"
+                android:id="@+id/order_history"
+                android:padding="60sp"
+                android:layout_margin="15sp"
+                android:background="@drawable/turf_button"
+                android:textColor="@color/colorWhite"
+                android:textSize="30sp"
+                android:layout_height="wrap_content"
+                android:text="Order History"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:id="@+id/add_turf"
+                android:padding="60sp"
+                android:visibility="gone"
+                android:layout_margin="15sp"
+                android:layout_weight="1"
+                android:textSize="30sp"
+                android:background="@drawable/turf_button"
+                android:textColor="@color/colorWhite"
+                android:layout_height="wrap_content"
+                android:text="ADD chemist"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

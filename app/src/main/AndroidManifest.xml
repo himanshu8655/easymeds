@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.easymed">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Query"></activity>
+        <activity android:name=".Offline_Cart" />
+        <activity android:name=".Book_admin" />
+        <activity android:name=".Booking" />
+        <activity android:name=".Wallet" />
+        <activity android:name=".PaymentGateway" />
+        <activity android:name=".Txn_History" />
+        <!--
+               Set to true if your app is Standalone, that is, it does not require the handheld
+               app to run.
+        -->
+        <meta-data
+            android:name="com.google.android.wearable.standalone"
+            android:value="true" />
+
+        <activity android:name=".TP" />
+        <activity android:name=".chemist_filter" />
+        <activity android:name=".chatbot" />
+        <activity android:name=".Offline_QR" />
+        <!--
+               Set to true if your app is Standalone, that is, it does not require the handheld
+               app to run.
+        -->
+        <activity android:name=".ChemistSetting" />
+        <activity android:name=".cart" />
+        <activity android:name=".add_medicine" />
+        <activity android:name=".buy_medicine" />
+        <activity android:name=".MainActivity2" />
+
+        <meta-data
+            android:name="com.google.android.gms.vision.DEPENDENCIES"
+            android:value="barcode" />
+
+        <activity android:name=".ScrollingActivity" />
+        <activity android:name=".add_chemist" />
+        <activity android:name=".Profile" />
+        <activity android:name=".HomeScreen" />
+        <activity android:name=".ResetPasswordActivity" />
+        <activity android:name=".Register" />
+        <activity android:name=".Login" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
